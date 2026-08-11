@@ -7,6 +7,10 @@ public class Exercicio05 {
         // b) Qual o menor elemento
         // c) A média dos elementos
 
+        int [] = {}
+
+        System.out.println("Informe alguns valores : ");
+
 
     }
 }
