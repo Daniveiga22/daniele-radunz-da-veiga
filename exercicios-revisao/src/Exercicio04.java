@@ -56,8 +56,8 @@ public class Exercicio04 {
         System.out.println("Média de Alturas : "+media+ " metros.");
         System.out.println("Foram informados : " +qtdAtletas);
 
-        System.out.println("Atleta mais alto : "+alturaMaisAlto+ " Inscrição : "+inscricaoMaisAlto);
-        System.out.println("Atleta mais baixo : "+alturaMaisBaixa+ " Inscrição : "+inscricaoMaisBaixo);
+        System.out.println("Atleta mais alto : "+alturaMaisAlto+ " metros, com inscrição : "+inscricaoMaisAlto+".");
+        System.out.println("Atleta mais baixo : "+alturaMaisBaixa+ " metros, com inscrição : "+inscricaoMaisBaixo+".");
 
         input.close();
 
