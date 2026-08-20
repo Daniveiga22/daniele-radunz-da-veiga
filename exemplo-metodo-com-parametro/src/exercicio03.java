@@ -14,7 +14,7 @@ public class exercicio03 {
     public static void numeroUsuario (int numero){
         System.out.println("Informe um valor : ");
         for(int i = 0; i < 21; i++ ){
-            
+
 
         }
 
