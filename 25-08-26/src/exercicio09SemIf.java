@@ -1,15 +1,6 @@
 import java.util.Scanner;
 
-public class exercicio09 {
-
-    public static boolean informarParOuImpar(int valor)
-    {
-        if(valor % 2 ==0){
-            return true;
-        }
-            return false;
-
-    }
+public class exercicio09SemIf {
 
     public static void main(String[] args) {
 
@@ -28,5 +19,11 @@ public class exercicio09 {
         input.close();
 
     }
+    public static boolean informarParOuImpar(int valor)
+    {
+        return valor % 2 ==0;
 
+
+
+    }
 }
