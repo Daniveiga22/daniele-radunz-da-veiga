@@ -12,5 +12,10 @@ public class exercicio10 {
         //usuario inseriu o limite minimo como 70.
         //depois ele inseriu o numero 80.
         //o retorno deve ser : 80 esta nos limites impostos
+
+        System.out.println("Informe um valor : ");
+        int valor = input.nextInt();
     }
+
+    public static int limitar (int )
 }
