@@ -3,7 +3,7 @@ public class Quadrilatero {
     double altura;
     double largura;
 
-    public double obterArea(){
+    public double obterPerimetro(){
         return altura*largura;
 
     }
