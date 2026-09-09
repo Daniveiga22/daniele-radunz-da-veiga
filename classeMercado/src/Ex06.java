@@ -86,8 +86,24 @@ public class Ex06 {
         }
         System.out.println("Mercado que teve a segunda maior receita total : " + mercadoSegundaMaiorReceitaTotal.nomeMercado);
 
+        // Juntando as 3 lojas, a franquia teve uma receita maior vendendo maças ou laranjas
 
+        double receitaGeralMaca = 0;
+        double receitaGeralLaranjas = 0;
 
+        for (int i = 0; i < mercados.length; i++){
+            receitaGeralLaranjas += mercados[i].calcularReceitaLaranjas();
+            receitaGeralMaca = mercados[i].calcularReceitaMaca();
+        }
+        if (receitaGeralMaca > receitaGeralLaranjas){
+            System.out.println("A franquia que teve a maior receita com Maças. ");
+
+        } else if (receitaGeralLaranjas > receitaGeralMaca) {
+            System.out.println("A franquia que teve a maior receita com Laranjas.");
+
+        }else {
+            System.out.println("As receitas foram iguais.");
+        }
 
 
     }
