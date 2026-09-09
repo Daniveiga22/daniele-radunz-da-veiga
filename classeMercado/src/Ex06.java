@@ -96,10 +96,10 @@ public class Ex06 {
             receitaGeralMaca = mercados[i].calcularReceitaMaca();
         }
         if (receitaGeralMaca > receitaGeralLaranjas){
-            System.out.println("A franquia que teve a maior receita com Maças. ");
+            System.out.println("A franquia que teve a maior receita com Maças:  " + mercadoMaiorReceitaMacas.nomeMercado);
 
         } else if (receitaGeralLaranjas > receitaGeralMaca) {
-            System.out.println("A franquia que teve a maior receita com Laranjas.");
+            System.out.println("A franquia que teve a menor receita com Laranjas : " + mercadoMenorReceitaLaranjas.nomeMercado);
 
         }else {
             System.out.println("As receitas foram iguais.");
