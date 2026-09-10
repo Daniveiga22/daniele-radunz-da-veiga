@@ -1,34 +1,11 @@
-public class Ex06 {
+public class ExConstrutor {
     public static void main(String[] args) {
 
-        Mercado unidadeDeBlumenau = new Mercado();
+        Mercado unidadeDeBlumenau = new Mercado("Mercado Blumenau", 5000, 1.20, 200, 1.20);
 
-        unidadeDeBlumenau.nomeMercado = "Mercado Blumenau";
-        unidadeDeBlumenau.macasVendidasAno = 5000;
-        unidadeDeBlumenau.precoMaca = 1.20;
-        unidadeDeBlumenau.laranjaVendidasAno= 4200;
-        unidadeDeBlumenau.precoLaranja = 0.90;
+        Mercado unidadeDeJoinville = new Mercado("SuperJOinville", 1000, 1.30, 100, 1.30);
 
-
-
-        Mercado unidadeDeJoinville = new Mercado();
-
-        unidadeDeJoinville.nomeMercado = "SuperMercado Joinville";
-        unidadeDeJoinville.macasVendidasAno = 1000;
-        unidadeDeJoinville.precoMaca = 1.30;
-        unidadeDeJoinville.laranjaVendidasAno = 100;
-        unidadeDeJoinville.precoLaranja = 0.80;
-
-
-
-        Mercado unidadeDeFlorianopolis = new Mercado();
-
-        unidadeDeFlorianopolis.nomeMercado = "Ilha Bela";
-        unidadeDeFlorianopolis.macasVendidasAno = 500;
-        unidadeDeFlorianopolis.precoMaca = 1.50;
-        unidadeDeFlorianopolis.laranjaVendidasAno = 2000;
-        unidadeDeFlorianopolis.precoLaranja = 3.00;
-
+       Mercado unidadeDeFlorianopolis = new Mercado("Ilha Bela", 500, 1.50, 2000, 3.00);
 
         Mercado mercados[] = {unidadeDeBlumenau, unidadeDeFlorianopolis, unidadeDeJoinville};
         //comporta o "objeto inteiro"
@@ -44,8 +21,8 @@ public class Ex06 {
                 mercadoMaiorReceitaMacas = mercados[i];
             }
         }
-        System.out.println(mercadoMaiorReceitaMacas.nomeMercado);
-        System.out.println(maiorReceitaMacas);
+        System.out.println("\n"+ mercadoMaiorReceitaMacas);
+        System.out.println("\n"+ maiorReceitaMacas);
 
 
 
@@ -60,7 +37,7 @@ public class Ex06 {
                 mercadoMenorReceitaLaranjas = mercados[i];
             }
         }
-        System.out.println(mercadoMenorReceitaLaranjas.nomeMercado);
+        System.out.println("\n"+ mercadoMenorReceitaLaranjas);
         System.out.println(menorReceitaLaranja);
 
         // qual das lojas teve a segunda maior receita total?
@@ -84,7 +61,7 @@ public class Ex06 {
                 mercadoSegundaMaiorReceitaTotal = mercados[i];
             }
         }
-        System.out.println("Mercado que teve a segunda maior receita total : " + mercadoSegundaMaiorReceitaTotal.nomeMercado);
+        System.out.println("\nMercado que teve a segunda maior receita total : " + mercadoSegundaMaiorReceitaTotal+"\n");
 
         // Juntando as 3 lojas, a franquia teve uma receita maior vendendo maças ou laranjas
 
@@ -104,7 +81,6 @@ public class Ex06 {
         }else {
             System.out.println("As receitas foram iguais.");
         }
-
 
     }
 }

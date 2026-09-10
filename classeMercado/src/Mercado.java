@@ -1,10 +1,19 @@
 public class Mercado {
 
     String nomeMercado;
+
     int macasVendidasAno;
+
     double precoMaca;
+
     int laranjaVendidasAno;
+
     double precoLaranja;
+
+
+
+
+
 
     public double calcularReceitaMaca(){
         return macasVendidasAno * precoMaca;
