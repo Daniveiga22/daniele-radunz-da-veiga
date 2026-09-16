@@ -14,24 +14,46 @@ public class Ex07 {
 
 
         // Qual aeronave leva o maior numero de passageiros?
+        double maiorPassageiros = 0;
+        Aeronave aeronaveMaiorPassageiros = null;
+
         for (int i = 0; i < aeronaves.length; i++){
-            System.out.println();
+            if (aeronaves[i].numeroPassageiros>maiorPassageiros){
+                maiorPassageiros=aeronaves[i].numeroPassageiros;
+                aeronaveMaiorPassageiros = aeronaves[i];
+            }
 
         }
+        System.out.println(aeronaveMaiorPassageiros);
 
         //Qual das aeronaves pode ficar mais tempo no ar?
-        System.out.println();
+
+        double maiorAutonomia = 0;
+        Aeronave aeronaveMaiorAutonomia = null;
+
+        for (int i = 0; i < aeronaves.length; i++) {
+            if (aeronaves[i].calcularTempoDeVoo() > maiorAutonomia) {
+                maiorAutonomia = aeronaves[i].calcularTempoDeVoo();
+                aeronaveMaiorAutonomia = aeronaves[i];
+            }
+        }
+
+        System.out.println(aeronaveMaiorAutonomia);
+
+
 
         //Considerando que os aviões estão em velocidade máxima, qual deles consegue voar mais longe?
 
+        double maiorDistancia = 0;
+        Aeronave aeronaveMaiorDistancia = null;
 
-
-
-
-
-
-
-
+        for (int i = 0; i < aeronaves.length; i++){
+            if (aeronaves[i].maiorDistanciaPercorrida() > maiorDistancia){
+                maiorDistancia = aeronaves[i].maiorDistanciaPercorrida();
+                aeronaveMaiorDistancia = aeronaves[i];
+            }
+        }
+        System.out.println(aeronaveMaiorDistancia);
 
 
     }
