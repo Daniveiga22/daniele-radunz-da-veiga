@@ -5,7 +5,7 @@ public class ExConstrutor {
 
         Mercado unidadeDeJoinville = new Mercado("SuperJOinville", 1000, 1.30, 100, 1.30);
 
-       Mercado unidadeDeFlorianopolis = new Mercado("Ilha Bela", 500, 1.50, 2000, 3.00);
+        Mercado unidadeDeFlorianopolis = new Mercado("Ilha Bela", 500, 1.50, 2000, 3.00);
 
         Mercado mercados[] = {unidadeDeBlumenau, unidadeDeFlorianopolis, unidadeDeJoinville};
         //comporta o "objeto inteiro"
