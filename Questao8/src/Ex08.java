@@ -20,9 +20,9 @@ public class Ex08 {
                 contribuinteMaiorImposto = clientes[i];
             }
         }
-        System.out.println(contribuinteMaiorImposto);
+        System.out.println("\nContribuinte que paga o maior Imposto : " +contribuinteMaiorImposto+"\n");
 
-        // b) Qual o total de imposto pago entre os 5 contribuintes?
+        // b) Qual o total de Imposto pago entre os 5 contribuintes?
 
         double totalImposto = 0;
         for (int i = 0; i < clientes.length; i++){
