@@ -28,10 +28,9 @@ public class ImpostoRenda {
 
     public void setNome(String nome) {
         if (nome == null || nome.isBlank()){ //is.Blank elimina todos os espaços em branco, para fazer a validação
-            System.out.println("Erro, nome inválido!");
-        }else {
-            this.nome = nome;
+            throw new IllegalArgumentException("Erro, nome inválido!");
         }
+        this.nome = nome;
     }
 
     public String getCpf() {
@@ -40,10 +39,9 @@ public class ImpostoRenda {
 
     public void setCpf(String cpf) {
         if (cpf == null || cpf.isBlank() || cpf.length() != 11){//cpf.lenght != 11 é para validar a quantidade de numeros do cpf
-            System.out.println("CPF inválido!");
-        } else {
-            this.cpf = cpf;
+            throw new IllegalArgumentException("CPF inválido!");
         }
+            this.cpf = cpf;
     }
 
     public String getUf() {
@@ -52,11 +50,9 @@ public class ImpostoRenda {
 
     public void setUf(String uf) {
         if( uf == null || uf.isBlank() || uf.length() != 2){
-            System.out.println("Erro, uf inválida!");
-        }else {
-            this.uf = uf;
+            throw new IllegalArgumentException("Erro, uf inválida!");
         }
-
+            this.uf = uf;
     }
 
     public double getRendaAnual() {
@@ -65,12 +61,10 @@ public class ImpostoRenda {
 
     public void setRendaAnual(double rendaAnual) {
         if (rendaAnual < 0){
-            System.out.println("Erro, Renda Anual Inválida!");
-        }else {
+            throw new IllegalArgumentException("Erro, Renda Anual Inválida!");
+        }
             this.rendaAnual = rendaAnual;
         }
-
-    }
     public double calcularImposto(){
         return rendaAnual * calcularAliquota();
     }
@@ -86,7 +80,9 @@ public class ImpostoRenda {
         } else if (rendaAnual <= 35000) {
             return  0.275;
         }
-            return rendaAnual * 0.3;
+        return rendaAnual * 0.3;
 
     }
 }
+
+
