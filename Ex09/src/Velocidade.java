@@ -45,6 +45,6 @@ public class Velocidade {
 
     public double somarVelocidade(){
         return velocidade + aumentar;
-        
+
     }
 }
