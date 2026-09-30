@@ -1,13 +1,11 @@
 public class Velocidade {
 
     private double velocidade;
-    private double aumentar;
-    private double reduzir;
 
-    public Velocidade(double velocidade, double aumentar, double reduzir) {
+
+    public Velocidade(double velocidade) {
         setVelocidade(velocidade);
-        setAumentar(aumentar);
-        setReduzir(reduzir);
+        
     }
 
     public double getVelocidade() {
