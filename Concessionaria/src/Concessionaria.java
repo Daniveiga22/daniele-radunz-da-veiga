@@ -13,19 +13,19 @@ public void adicionarVeiculo(Veiculo v) {
     veiculos.add(v);
 }
 
-public Veiculo obterVeiculoMaisCaro()
+public Veiculo obterVeiculoMaisBarato()
 {
-    double maiorPreco = 0;
-    Veiculo veiculoMaisCaro = null;
+    double menorPreco = Double.MAX_VALUE;
+    Veiculo veiculoMaisBarato = null;
 
     for (Veiculo v : veiculos){
-        if(v.getPreco() > maiorPreco){
-            maiorPreco = v.getPreco();
-            veiculoMaisCaro = v;
+        if(v.getPreco() < menorPreco){
+            menorPreco = v.getPreco();
+            veiculoMaisBarato = v;
         }
     }
 
-    return veiculoMaisCaro;
+    return veiculoMaisBarato;
 }
 
 
