@@ -25,10 +25,8 @@ public class FloriculturaPrincipal {
             }
         }
 
-
         return floresPesquisa;
     }
-
 
 
 
