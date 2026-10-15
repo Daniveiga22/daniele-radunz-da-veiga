@@ -17,7 +17,7 @@ public class Floricultura {
 
     public void setNome(String nome) {
         if (nome == null || nome.isBlank()) {
-            throw new IllegalArgumentException("Nome informado é Inválido!");
+            throw new IllegalArgumentException("Nome Flor Informado é Inválido!");
         }
 
         this.nome = nome;
@@ -30,7 +30,7 @@ public class Floricultura {
 
     public void setPreco(double preco) {
         if (preco <=0 ){
-            throw new IllegalArgumentException("Valor Informado esta Incorreto!")
+            throw new IllegalArgumentException("Valor Informado Incorreto!");
         }
 
         this.preco = preco;

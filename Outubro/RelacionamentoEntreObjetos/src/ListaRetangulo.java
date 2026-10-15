@@ -39,9 +39,4 @@ public class ListaRetangulo {
         }
         return maiorPerimetroRetangulo;
     }
-
-
-
-
-
 }
