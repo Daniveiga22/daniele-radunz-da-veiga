@@ -1,10 +1,10 @@
 public class Alunos {
 
-    String nome;
-    int idade;
-    String matricula;
-    String curso;
-    double mediaFinal;
+    private String nome;
+    private int idade;
+    private String matricula;
+    private String curso;
+    private double mediaFinal;
 
     public Alunos(String nome, int idade, String matricula, String curso, double mediaFinal) {
         setNome(nome);
@@ -32,7 +32,7 @@ public class Alunos {
     }
 
     public void setIdade(int idade) {
-        if (idade <=0){
+        if (idade <0){
             throw new IllegalArgumentException("Idade Informada é Inválida!");
         }
 
@@ -45,7 +45,7 @@ public class Alunos {
 
     public void setMatricula(String matricula) {
         if (matricula == null || matricula.isBlank() ) {
-            throw new IllegalArgumentException("Matrícula Inválida!");
+            throw new IllegalArgumentException("Matrícula Informada é Inválida!");
         }
         this.matricula = matricula;
     }
@@ -68,7 +68,21 @@ public class Alunos {
     }
 
     public void setMediaFinal(double mediaFinal) {
+        if (mediaFinal < 0 || mediaFinal > 10){
+            throw new IllegalArgumentException("Média Informada é Inválida!");
+        }
 
         this.mediaFinal = mediaFinal;
+    }
+
+    @Override
+    public String toString() {
+        return "Alunos{" +
+                "nome='" + nome + '\'' +
+                ", idade=" + idade +
+                ", matricula='" + matricula + '\'' +
+                ", curso='" + curso + '\'' +
+                ", mediaFinal=" + mediaFinal +
+                '}';
     }
 }

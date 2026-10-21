@@ -30,7 +30,7 @@ public class Floricultura {
 
     public void setPreco(double preco) {
         if (preco <=0 ){
-            throw new IllegalArgumentException("Valor Informado Incorreto!");
+            throw new IllegalArgumentException("Valor Informado  Incorreto!");
         }
 
         this.preco = preco;
