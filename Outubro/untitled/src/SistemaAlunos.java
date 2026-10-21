@@ -7,7 +7,6 @@ public class SistemaAlunos {
 
     public SistemaAlunos() {
         alunos = new ArrayList<Alunos>();
-
     }
 
     public void adicionarAlunos(Alunos a) {
@@ -31,10 +30,9 @@ public class SistemaAlunos {
         for (Alunos a : alunos){
             if (a.getMatricula().equals(matricula)){
                 return a;
-
             }
         }
-        return null;
+        throw new IllegalArgumentException("Matrícula Existente");
 
     }
 

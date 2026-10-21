@@ -6,6 +6,7 @@ public class Ex03 {
         Alunos a2 = new Alunos("Anna", 16, "ADF001", "Biologia", 8);
         Alunos a3 = new Alunos("Bruno", 18, "ADM002", "Matemática", 6);
         Alunos a4 = new Alunos("Clara", 18, "ADF002","Artes", 8.5);
+        Alunos a5 = new Alunos("Sandro", 20, "ADM005", "Biologia", 7.9);
 
 
         SistemaAlunos s1 = new SistemaAlunos();
@@ -14,6 +15,7 @@ public class Ex03 {
         s1.adicionarAlunos(a2);
         s1.adicionarAlunos(a3);
         s1.adicionarAlunos(a4);
+        s1.adicionarAlunos(a5);
 
         System.out.println(s1.retornarAlunosCursoMediaIdade("Artes", 18, 6));
 
