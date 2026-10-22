@@ -9,18 +9,24 @@ public class Conta {
     }
 
     public String getNomeTitular() {
+
         return nomeTitular;
     }
 
     public void setNomeTitular(String nomeTitular) {
+        if (nomeTitular == null || nomeTitular.isBlank()){
+            throw new IllegalArgumentException("Nome Informado é Inválido!");
+        }
         this.nomeTitular = nomeTitular;
     }
 
     public double getSaldo() {
+
         return saldo;
     }
 
     public void setSaldo(double saldo) {
+
         this.saldo = saldo;
     }
 
