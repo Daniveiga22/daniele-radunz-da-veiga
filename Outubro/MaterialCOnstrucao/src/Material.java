@@ -13,6 +13,7 @@ public class Material {
     }
 
     public String getMarca() {
+
         return marca;
     }
 
@@ -41,6 +42,9 @@ public class Material {
     }
 
     public void setPreco(double preco) {
+        if (preco <=0){
+            throw new IllegalArgumentException("Valor Informado é Inválido!");
+        }
         this.preco = preco;
     }
 
@@ -60,5 +64,20 @@ public class Material {
                 ", preco=" + preco +
                 ", quantidadeEmEstoque=" + quantidadeEmEstoque +
                 '}';
+    }
+    public void adicionarEstoque(int adicionar){
+        if(adicionar <= 0){
+            throw new IllegalArgumentException("Quantidade Informada é Inválida!");
+        }
+        quantidadeEmEstoque = quantidadeEmEstoque + adicionar;
+        //quantidadeEmEstoque += vender
+    }
+
+    public void venderProdutos ( int vender){
+        if(vender > quantidadeEmEstoque){
+            throw new IllegalArgumentException("Quantidade Informada, excede o Estque!");
+        }
+        quantidadeEmEstoque = quantidadeEmEstoque - vender;
+        // quantidadeEmEstoque-= vender
     }
 }
