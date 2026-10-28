@@ -11,8 +11,8 @@ public class Ex04 {
         Material m5 = new Material("Tigre", "Caixa D'Agua 500l", 249.99, 12);
 
         //m1.aumentarQuantidadeDoEstoque(5);
-        m1.venderProdutos(10);
-        System.out.println(m1);
+        //m1.venderProdutos(10);
+        //System.out.println(m1);
 
 
         MateriaisDeConstrucao e1 = new MateriaisDeConstrucao();
