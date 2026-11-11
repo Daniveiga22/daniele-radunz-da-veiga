@@ -69,8 +69,7 @@ public class Conta {
         if(tempo <= 0 || valor <=0){
             throw new IllegalArgumentException("Tempo ou Valor informado esta Inválido!");
         }
-        double resultado =valor*Math.pow(1.01, tempo);
-        return resultado;
+        return valor *Math.pow(1.01, tempo);
 
 
     }
