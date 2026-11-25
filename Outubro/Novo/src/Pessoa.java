@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class pessoa{
+public class Pessoa{
 
     // 9) Classe Família
     // - listaPessoas: List<Pessoas>
@@ -18,7 +18,7 @@ public class pessoa{
    private String nome;
    private LocalDate dataNascimento;
 
-   public pessoa(String nome, LocalDate dataNascimento) {
+   public Pessoa(String nome, LocalDate dataNascimento) {
       setNome(nome);
       setDataNascimento(dataNascimento);
    }
@@ -28,6 +28,9 @@ public class pessoa{
    }
 
    public void setNome(String nome) {
+      if (nome == null || nome. isBlank()){
+         throw new IllegalArgumentException("Nome Inválido");
+      }
       this.nome = nome;
    }
 
@@ -41,6 +44,8 @@ public class pessoa{
       }
       this.dataNascimento = dataNascimento;
    }
+
+
 
 
    @Override
